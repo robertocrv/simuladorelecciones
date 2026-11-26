@@ -1,3 +1,4 @@
+
 // 1. Partido Socialista Obrero Español (PSOE)
 const c1 = new Candidato("Amparo", "Torres Valencoso");
 const c2 = new Candidato("Javier", "Navarro López");

@@ -1,44 +1,4 @@
-<<<<<<< HEAD
 
-class Partido {
-    constructor(circunscripcion, id, nombre, candidato = null) {
-        this.circunscripcion = circunscripcion;
-        this.id = id;
-        this.nombre = nombre;
-        this.candidato = candidato;
-    }
-}
-
-function generarPartidos() {
-    const circunscripcion = "Albacete";
-
-    const nombresPartidos = [
-        "Partido Popular",
-        "Partido Socialista Obrero Español",
-        "VOX",
-        "SUMAR",
-        "Podemos",
-        "PACMA",
-        "Ciudadanos",
-        "Se Acabó La Fiesta"
-    ];
-
-    return nombresPartidos.map((nombre, index) => {
-        return new Partido(
-            circunscripcion,
-            index + 1,
-            nombre
-        );
-    });
-}
-
-module.exports = {
-    Partido,
-    generarPartidos
-};
-
-console.log(generarPartidos());
-=======
 // 1. Partido Socialista Obrero Español (PSOE)
 const c1 = new Candidato("Amparo", "Torres Valencoso");
 const c2 = new Candidato("Javier", "Navarro López");
@@ -92,4 +52,3 @@ const c33 = new Candidato("Juan", "Blanco Castellanos");
 const c34 = new Candidato("Ester", "Navarro Rodenas");
 const c35 = new Candidato("Jose Vicente", "Galera García");
 const c36 = new Candidato("Laura", "Fernández Giner");
->>>>>>> 37002fb6929925744703c7f6df4615b9d82973be

@@ -394753,3 +394753,9 @@ const p394741 = new Persona("Orlando", "Carvajal Calleja", 65, "06045997X", "020
 const p394742 = new Persona("Cayetano", "Cardona Yáñez", 29, "82612955Z", "02400");
 const p394743 = new Persona("Estrella", "Correa Bustos", 45, "71863597M", "02630");
 const p394744 = new Persona("Joel", "Elizalde Cáceres", 34, "51702476V", "02430");
+
+ const personas = [];
+
+for (let i = 1; i <= 394744; i++) {
+    personas.push(eval("p" + i));
+}

@@ -63,3 +63,9 @@ const listaPartidos = [
     PAR, CHA, MES, GBai, UPL,
     XAV, ADELANTE_ANDALUCIA, ANDALUCIA_POR_SI, FORO, EV
 ];
+// Objeto map con la clave sigla valor objeto organizacion
+const mapaOrganizaciones = new Map();
+
+listaPartidos.forEach(partido => {
+    mapaOrganizaciones.set(partido.siglas, partido);
+});

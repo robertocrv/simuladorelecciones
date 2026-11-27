@@ -1,4 +1,6 @@
-
+/* Programa de Arturo */
+ 
+// circunscripcion, ID, Nombre del partido, canidato (recibido por Tania)
 class Partido {
     constructor(circunscripcion, id, nombre, candidato = null) {
         this.circunscripcion = circunscripcion;
@@ -8,32 +10,16 @@ class Partido {
     }
 }
 
-function generarPartidos() {
-    const circunscripcion = "Albacete";
+const partidos = [
+    new Partido("Albacete", 1, "Partido Socialista Obrero Español"),
+    new Partido("Albacete", 2, "Frente Obrero"),
+    new Partido("Albacete", 3, "Se Acabó La Fiesta"),
+    new Partido("Albacete", 4, "Por un Mundo Más Justo"),
+    new Partido("Albacete", 5, "VOX"),
+    new Partido("Albacete", 6, "Podemos"),
+    new Partido("Albacete", 7, "Partido Animalista con el Medio Ambiente"),
+    new Partido("Albacete", 8, "Partido Popular"),
+    new Partido("Albacete", 9, "Frente Amplio")
+];
 
-    const nombresPartidos = [
-        "Partido Popular",
-        "Partido Socialista Obrero Español",
-        "VOX",
-        "SUMAR",
-        "Podemos",
-        "PACMA",
-        "Ciudadanos",
-        "Se Acabó La Fiesta"
-    ];
-
-    return nombresPartidos.map((nombre, index) => {
-        return new Partido(
-            circunscripcion,
-            index + 1,
-            nombre
-        );
-    });
-}
-
-module.exports = {
-    Partido,
-    generarPartidos
-};
-
-console.log(generarPartidos());
+console.log(partidos);
